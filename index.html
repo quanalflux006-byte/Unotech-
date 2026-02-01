@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Unotech Nigeria</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unotech Agency | Professional Websites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Welcome to Unotech</h1>
-  <p>Building websites for Nigerian businesses.</p>
-  <script src="js/script.js"></script>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <h2 class="logo">UNOTECH</h2>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>We Build Your <span>Online Presence</span></h1>
+            <p>Professional websites for Nigerian businesses</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>What We Do</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Website Design</h3>
+                    <p>Custom websites for your business</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Responsive</h3>
+                    <p>Works on all devices</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>
+                    <p>Streamline your operations</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Setup</h3>
+                    <p>Get found on Google</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="grid">
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=400" alt="Barbershop">
+                    <h4>Classic Cuts</h4>
+                </div>
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Restaurant">
+                    <h4>Mama's Kitchen</h4>
+                </div>
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400" alt="Clinic">
+                    <h4>HealthCare Plus</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2348103457497">0810 345 7497</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348103457497">WhatsApp</a></p>
+                    <p><i class="fas fa-envelope"></i> vnwaka044@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Imo State, Nigeria</p>
+                </div>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Unotech Agency. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2348103457497" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
