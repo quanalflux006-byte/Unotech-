@@ -3,112 +3,476 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unotech Agency | Professional Websites</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Unotech - Professional web design agency in Nigeria. We build stunning, modern websites for businesses across Nigeria.">
+    <meta name="keywords" content="web design Nigeria, website development, Nigerian web agency, business websites">
+    <meta property="og:title" content="Unotech - We Build Your Online Presence">
+    <meta property="og:description" content="Professional websites for Nigerian businesses">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unotec.netlify.app">
+    <title>Unotech | Professional Web Design Agency in Nigeria</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Unotech Agency",
+      "description": "Professional web design and development agency in Nigeria",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Imo State",
+        "addressCountry": "NG"
+      },
+      "telephone": "+2348103457497",
+      "email": "vnwaka044@gmail.com"
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <h2 class="logo">UNOTECH</h2>
-            <button class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </button>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navbar - Glassmorphic -->
+    <nav class="navbar glass" id="navbar">
+        <div class="container nav-container">
+            <div class="logo gradient-text">UNOTECH</div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <h1>We Build Your <span>Online Presence</span></h1>
-            <p>Professional websites for Nigerian businesses</p>
-            <a href="#contact" class="btn">Get Started</a>
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text">We Build Your</span><br>
+                    <span class="gradient-text hero-highlight">Online Presence</span>
+                </h1>
+                <p class="hero-subtitle fade-in">Professional, modern websites for Nigerian businesses. Fast, beautiful, and built to convert.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        View Portfolio
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="200">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="350">0</h3>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
+    <!-- Services Section - Bento Grid -->
     <section class="services" id="services">
         <div class="container">
-            <h2>What We Do</h2>
-            <div class="grid">
-                <div class="card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Website Design</h3>
-                    <p>Custom websites for your business</p>
+            <div class="section-header reveal">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive digital solutions for your business growth</p>
+            </div>
+            <div class="bento-grid">
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Custom, stunning websites that capture your brand and convert visitors</p>
+                    <div class="service-badge">Popular</div>
                 </div>
-                <div class="card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile Responsive</h3>
-                    <p>Works on all devices</p>
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <p>Sell online with powerful stores integrated with Nigerian payment gateways</p>
                 </div>
-                <div class="card">
-                    <i class="fas fa-robot"></i>
-                    <h3>Automation</h3>
-                    <p>Streamline your operations</p>
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO & Marketing</h3>
+                    <p>Get found on Google and grow your online presence organically</p>
                 </div>
-                <div class="card">
-                    <i class="fas fa-search"></i>
-                    <h3>SEO Setup</h3>
-                    <p>Get found on Google</p>
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and web apps for iOS and Android platforms</p>
+                </div>
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Logo design, brand identity, and visual communication</p>
+                </div>
+                <div class="service-card glass reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Hosting & Maintenance</h3>
+                    <p>Reliable hosting and ongoing support for your website</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="grid">
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=400" alt="Barbershop">
-                    <h4>Classic Cuts</h4>
+            <div class="section-header reveal">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Stunning websites we've built for Nigerian businesses</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&h=400&fit=crop&q=80" alt="Barbershop Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Classic Cuts Barbershop</h4>
+                            <p>Website Design • Booking System</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Restaurant">
-                    <h4>Mama's Kitchen</h4>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop&q=80" alt="Restaurant Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Mama's Kitchen</h4>
+                            <p>Restaurant Website • Online Menu</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400" alt="Clinic">
-                    <h4>HealthCare Plus</h4>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&q=80" alt="Clinic Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>HealthCare Plus</h4>
+                            <p>Medical Website • Appointment System</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&q=80" alt="Fashion Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Glamour Boutique</h4>
+                            <p>E-Commerce • Fashion Store</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&q=80" alt="Real Estate" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Prime Properties</h4>
+                            <p>Real Estate • Property Listings</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1427751840561-9852520f8ce8?w=600&h=400&fit=crop&q=80" alt="School Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Bright Future Academy</h4>
+                            <p>School Website • Student Portal</p>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About / Why Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2 class="section-title">Built For Nigerian <span class="gradient-text">Businesses</span></h2>
+                    <p>We understand the unique needs of Nigerian businesses. From integrating local payment gateways like Paystack and Flutterwave to optimizing for Nigerian internet speeds, we build websites that work for your market.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast loading even on slow connections</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nigerian payment gateway integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mobile-first design for your customers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Local business SEO optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-box glass">
+                        <h3>5+</h3>
+                        <p>Years in Business</p>
+                    </div>
+                    <div class="stat-box glass">
+                        <h3>200+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-box glass">
+                        <h3>99%</h3>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                    <div class="stat-box glass">
+                        <h3>24/7</h3>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card glass">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Unotech transformed our online presence. Our sales have tripled since launching the new website!"</p>
+                        <div class="testimonial-author">
+                            <h4>Chidi Okafor</h4>
+                            <span>CEO, Glamour Boutique</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional, fast, and understood exactly what our restaurant needed. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <h4>Ngozi Adebayo</h4>
+                            <span>Owner, Mama's Kitchen</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"The booking system they built has made managing appointments so much easier. Excellent work!"</p>
+                        <div class="testimonial-author">
+                            <h4>Emeka Johnson</h4>
+                            <span>Owner, Classic Cuts Barbershop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass reveal">
+                <h2>Ready to Elevate Your Business?</h2>
+                <p>Let's build something amazing together. Get your free consultation today!</p>
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    <span>Start Your Project</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <div class="section-header reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Talk</span></h2>
+            </div>
             <div class="contact-grid">
-                <div>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+2348103457497">0810 345 7497</a></p>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348103457497">WhatsApp</a></p>
-                    <p><i class="fas fa-envelope"></i> vnwaka044@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Imo State, Nigeria</p>
+                <div class="contact-info reveal">
+                    <div class="contact-item glass">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+2348103457497">0810 345 7497</a>
+                        </div>
+                    </div>
+                    <div class="contact-item glass">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/2348103457497?text=Hi%20Unotech">Chat with us</a>
+                        </div>
+                    </div>
+                    <div class="contact-item glass">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:vnwaka044@gmail.com">vnwaka044@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item glass">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Imo State, Nigeria</p>
+                        </div>
+                    </div>
                 </div>
-                <form name="contact" method="POST" data-netlify="true">
+                <form class="contact-form glass reveal" name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send</button>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="ecommerce">E-Commerce</option>
+                            <option value="seo">SEO & Marketing</option>
+                            <option value="mobile-app">Mobile App</option>
+                            <option value="branding">Branding</option>
+                            <option value="hosting">Hosting & Maintenance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Unotech Agency. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="gradient-text">UNOTECH</h3>
+                    <p>Building exceptional digital experiences for Nigerian businesses</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">E-Commerce</a></li>
+                        <li><a href="#services">SEO & Marketing</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Branding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 0810 345 7497</p>
+                    <p><i class="fas fa-envelope"></i> vnwaka044@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Imo State, Nigeria</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Unotech Agency. All rights reserved. Built with ❤️ in Nigeria</p>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/2348103457497" class="whatsapp-float">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348103457497?text=Hi%20Unotech,%20I'm%20interested%20in%20a%20website" class="whatsapp-float" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
